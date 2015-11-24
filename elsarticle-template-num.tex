@@ -1,0 +1,223 @@
+%% 
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{multirow}
+
+\journal{Journal of Systems and Software}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Variability-based improvement of m-learning applications development: a product line design, implementation and experimental evaluation}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \address[label1]{}
+%% \address[label2]{}
+
+\author[usp]{Venilton~FalvoJr}
+\author[usp]{Anderson~Marcolino}
+\author[usp]{Nemesio~Duarte~Filho}
+\author[uem]{Edson~OliveiraJr}
+\author[usp]{Ellen~Barbosa\fnref{myfootnote}}
+
+\fntext[myfootnote]{Institute of Science and Computational Mathematics (ICMC-USP), Avenida Trabalhador Sao-Carlense, 400, Sao Paulo, Brazil. E-mail: francine@icmc.usp.br. Phone: +55 (16) 3373-8177. Fax: +55 (16) 3373-8888.}
+
+\address[usp]{University of Sao Paulo (USP), Brazil}
+\address[uem]{State University of Maringa (UEM), Brazil}
+
+\begin{abstract}
+Software Product Lines (SPL) aim at improving the product quality and time-to-market of singular software development methodology. This reuse approach has variability as a central concept that allows the diversity of software products in a specific domain. On the educational domain, the popularity of mobile devices has contributed to the increasing demand for mobile learning (m-learning) applications. This paper discusses how variability can improve the development of m-learning applications by means of the adoption of a concise variability management approach, named SMarty. An SPL for m-learning applications was developed and experimentally evaluated in the industrial setting, providing evidence that well-defined variabilities can speed up the time to market of m-learning products with reduced number of faults.
+\end{abstract}
+
+\begin{keyword}
+software product lines \sep mobile learning \sep variability management \sep experimental evaluation
+%% keywords here, in the form: keyword \sep keyword
+
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% \linenumbers
+
+%% main text
+\input{sections/section1}
+
+\input{sections/section2}
+
+\input{sections/section3}
+
+\input{sections/section4}
+
+\input{sections/section5}
+
+\input{sections/section6}
+
+\input{sections/section7}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+%%  \bibliographystyle{elsarticle-num} 
+%%  \bibliography{<your bibdatabase>}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+\begin{thebibliography}{33}
+
+%% \bibitem{label}
+%% Text of bibliographic item
+
+\bibitem{chen11} Chen~L, Babar~MA. 2011. A systematic review of evaluation of variability management approaches in software product lines. Information and Software Technology.
+
+\bibitem{capilla13} Capilla~R, Bosch~J, Kang~KC. 2013. Systems and Software Variability Management. Springer.
+
+\bibitem{bockle05} B\"{o}ckle~G, van der Linden~FJ. 2005. Software product line engineering: foundations, principles and techniques. Edited by Klaus Pohl. Springer Science \& Business Media.
+
+\bibitem{vanderlinden07} van der Linden~FJ, Schmid~K, Rommes~E. 2007. Software product lines in action: the best industrial practice in product line engineering. Springer Science \& Business Media.
+
+\bibitem{west12} West~M, Vosloo~S. 2012. Mobile Learning for Teachers: Global Themes. UNESCO.
+
+\bibitem{kukulska05} Kukulska-Hulme~A, Traxler~J. 2005. Mobile Learning: a Handbook for Educators and Trainers. Routledge.
+
+\bibitem{bezerra09} Bezerra~YM, Pereira~TAB, da Silveira~GE. 2009. A Systematic Review of Software Product Lines Applied to Mobile Middleware. Information Technology: New Generations (ITNG).
+
+\bibitem{kinshuk03} Kinshuk~SJ, Sutinen~E, Goh~T. 2003. Mobile technologies in support of distance learning. Asian Journal of Distance Education.
+
+\bibitem{wexler08} Wexler~S, Brown~J, Metcalf~D, Rogers~D, Wagner~E. 2008. Mobile Learning: What it is, why it matters, and how to incorporate it into your learning strategy. Guild Research.
+
+\bibitem{falvojr14a} FalvoJr~V, Duarte Filho~NF, OliveiraJr~E, Barbosa~EF. 2014. Towards the Establishment of a Software Product Line for Mobile Learning Applications. International Conference on Software Engineering and Knowledge Engineering (SEKE).
+
+\bibitem{falvojr14b} FalvoJr~V, Duarte Filho~NF, OliveiraJr~E, Barbosa~EF. 2014. A Contribution to the Adoption of Software Product Lines in the Development of Mobile Learning Applications. Annual Frontiers In Education (FIE) Conference.
+
+\bibitem{oliveirajr10} OliveiraJr E, Gimenes IMS, Maldonado JC. 2010. Systematic Management of Variability in UML-based Software Product Lines. Journal Universal Computer Science.
+
+\bibitem{bosch01} Bosch~J. 2001. Software product lines: organizational alternatives. International Conference on Software Engineering.
+
+\bibitem{marcolino13} Marcolino~A, OliveiraJr~E, Gimenes~IMS, Maldonado~JC. 2013. Towards the Effectiveness of a Variability Management Approach at Use Case Level. International Conference on Software Engineering and Knowledge Engineering (SEKE).
+
+\bibitem{marcolino14a} Marcolino~A., OliveiraJr~E, Gimenes~IMS, Barbosa~EF. 2014. Empirically Based Evolution of a Variability Management Approach at UML Class Level. Computer Software and Applications Conference (COMPSAC).
+
+\bibitem{marcolino14b} Marcolino~A., OliveiraJr~E, Gimenes~IMS. 2014. Variability Management in Software Product Line UML Sequence Models: Proposal and Empirical Study. Brazilian Symposium Software Engineering (SBES).
+
+\bibitem{bera15} Bera~MHG, OliveiraJr~E, Colanzi~TE. 2015. Evidence-based SMarty Support for Variability Identification and Representation in Component Models. International Conference on Enterprise Information Systems (ICEIS).
+
+\bibitem{filho13} Filho~NFD, Barbosa~EF. 2013. A requirements catalog for mobile learning environments. Annual ACM Symposium on Applied Computing.
+
+\bibitem{krueger02} Krueger~C. 2002. Easing the transition to software mass customization. Software Product-Family Engineering. Springer Berlin Heidelberg.
+
+\bibitem{kang90} Kang~KC, Cohen~SG, Hess~JA, Novak~WE, Peterson~AS. 1990. Feature-oriented domain analysis (FODA) feasibility study. Software Engineering Institute, Carnegie Mellon University.
+
+\bibitem{llamas14} Llamas~MSR, Reith~R, Shirer~M. 2014. Android and iOS Continue to Dominate the Worldwide Smartphone Market with Android Shipments Just Shy of 800 Million in 2013. According to IDC (Online).
+
+\bibitem{vangurp01} Van Gurp~J, Bosch~J, Svahnberg~M. 2001. On the notion of variability in software product lines. Working IEEE/IFIP Conference on Software Architecture.
+
+\bibitem{fielding00} Fielding~RT. 2000. Architectural styles and the design of network-based software architectures. University of California.
+
+\bibitem{marinho10} Marinho~FG, Costa~AL, Lima~FF, Neto~JBB, Rocha~L, Dantas~VLL, Andrade~RMC, Teixeira~E, Werner~C. 2010. An architecture proposal for nested software product lines in the domain of mobile and context-aware applications. Software Components, Architectures and Reuse (SBCARS).
+
+\bibitem{nascimento11} Nascimento~AS, Rubira~CMF and Lee~J. 2011. An SPL approach for adaptive fault tolerance in SOA. International Software Product Line Conference.
+
+\bibitem{jedlitschka07} Jedlitschka~A, Pfahl~D 2005. Reporting guidelines for controlled experiments in software engineering. In Empirical Software Engineering. IEEE Software.
+
+\bibitem{craig02} Craig~RD, Jaskiel~SP. 2002. Systematic software testing. Artech House.
+
+\bibitem{wohlin12} Wohlin~C, Runeson~P, Host~M, Ohlsson~MC, Regnell~B, Wesslen~A. 2012. Experimentation in software engineering. Springer Science \& Business Media.
+
+\bibitem{shaphirowilk65} Shaphiro~SS, Wilk~MB. 1965. An analysis of variance test for normality. Biometrika.
+
+\bibitem{neto13} Neto~AA, Conte~T. 2013. A conceptual model to address threats to validity in controlled experiments. International Conference on Evaluation and Assessment in Software Engineering. ACM.
+
+\bibitem{engstrom11} Engstr\"{o}m~E, Runeson~P. 2011. Software product line testing -- A systematic mapping study. Information and Software Technology.
+
+\bibitem{gamez14} Gamez~N, Fuentes~L, Troya~J. 2014. Self-adaptation of mobile systems with dynamic software product lines. IEEE Software.
+
+\bibitem{itu14} ITU. 2014. The world in 2014: Ict facts and figures. Information and Communication Technologies (ICT).
+
+\end{thebibliography}
+\end{document}
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.

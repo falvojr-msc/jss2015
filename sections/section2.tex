@@ -1,0 +1,64 @@
+\section{Background}\label{section2}
+
+In this section we provide a brief overview of essential concepts with respect to: (i) SPLs and variabilities; (ii) the SMarty approach for variability management; and (iii) m-learning.
+
+\subsection{SPL and Variabilities}
+
+SPLs enable the creation of software-intensive systems that share and manage a set of features satisfying the specific needs of a particular domain. Commonalities are shared by all derived products, while variabilities represent the scope of customization supported by them \cite{bockle05,vanderlinden07}.
+
+%The proper management of variabilities has great relevance in order to ensure that all the benefits of SPLs are obtained. In this sense, different approaches related to the management of variabilities have been discussed by the research community.
+
+Variability is one of the most important issues in designing an SPL, reflecting the way according to which family members of an SPL differ from each other. The precise and explicit representation and management of variabilities make possible the consistent generation of specific products in an SPL \cite{chen11, capilla13}. 
+
+Variabilities can be initially identified and represented by means of features, which represent relevant and visible characteristics to stakeholders of a particular domain \cite{bosch01}. Features are usually represented by a feature model, i.e., a hierarchical representation that captures the structural relationships among the features of a specific domain \cite{bockle05, vanderlinden07}. Common features to the SPL products are considered mandatory, while variable features can be optional or alternative. %To be included in a product, optional features should add some value to its mandatory features. Two or more features may be alternative, however, only one may be included in a particular product.
+
+The concept of SPL is suitable to domains in which there is a demand for products that have common features and a well-defined set of variabilities. For instance, considering the education domain, instructors, tutors and apprentices can use ubiquitous computing to contribute and access the learning materials anytime and anywhere \cite{kukulska05}. This characteristic is achieved due to variabilities, such as interactivity and multimedia resources \cite{falvojr14a, falvojr14b}, which provide a high degree of communication and cooperation among users.
+
+At its essence, the conception of an SPL involves core asset development and product development, both under a technical and organizational management perspectives. Core asset development can be done with extraction of artifacts from existing software products or through scratch development and, with the existent artifacts, the products can be development. Generally, products and core assets are built in common according among them. These SPL's conception phases are classified into three essential activities: (i) Core Asset Development or DE; (ii) Product Development or AE; and (iii) Management \cite{bockle05, vanderlinden07}.
+
+\subsection{The SMarty Approach}
+
+The proper management of variabilities has great relevance to ensure that all the benefits of SPLs are obtained. Different approaches related to the management of variabilities have been proposed by the research community  \cite{chen11, capilla13}.  
+
+%The choice of an approach that supports the representation of technical models is a difficult task due to the wide range of existing proposals and, at the same time, the lack of experimental validation of them. While some of the existing approaches use specific domain languages, others are based on widely known modeling languages, such as UML.
+
+%M-SPLearning has been developed based on a variability management approach -- SMarty (\textbf{S}tereotype-based \textbf{M}anagement of V\textbf{ar}iabili\textbf{ty}) approach~\cite{junior2010, fiori2012}. Among the reasons for our choice, we highlight: (i) the cognitive ease provided by SMarty, supporting the adoption of modeling tools; (ii) its conformance with UML, facilitating the development and validation of SPLs; and (iii) the existence of experimental evidences with regard to its use~\cite{marcolino2013, marcolinocls2014, marcolinoseq2014}. 
+
+\textbf{S}tereotype-based \textbf{M}anagement of V\textbf{ar}iabili\textbf{ty} (SMarty)~\cite{oliveirajr10} is a variability management approach, composed of an UML 2.4 profile, the SMartyProfile, and supported by a systematic process, the SMartyProcess, related to the main SPL activities. The SMartyProcess defines a set of guidelines, which supports the application of stereotypes and tagged-values from the SMartyProfile. The guidelines ensure the identification and representation of variabilities and allow the evolution of SPL, whereas the process incrementally and iteratively guarantees the identification of new variabilities and the evolution of the SPL core assets.
+
+Another benefit from the use of SMarty is the visibility with respect to the relationship among the feature model and the variabilities in the UML diagrams. The variabilities composed of variation points are fully represented, eliminating the need of additional documents to perform the development \cite{oliveirajr10}.
+
+%\footnote{A variation point specifies the points where the variation occurs and may be solved by choosing one or more variants, ruled by a set of constraints \cite{pohl2005}.}
+
+The UML models supported by SMarty (use case, class, sequence, component and activity) represent the static and dynamic aspects of software products.  In recent studies, the SMarty effectiveness with respect to identification and representation of variabilities in the UML models was experimentally evaluated \cite{marcolino13, marcolino14a, marcolino14b, bera15}. The results provided evidences of the effectiveness from use case, sequence and component models. Also, they lead to the evolution of the SMartyProcess for class models.
+
+%The identification of some issues and the solution of them in new versions allows a better precision and confiability in the utilization and adoption of the approach. Beside this facts, the SMartyProcess allows a quickly learning process of their profile and its application for the software product line developed.
+
+
+%The guideline below exemplifies how its use facilitates the application and evolution of a SPL. The guideline is identified by an acronym and a number. This example shows the second (2) guideline for use case diagram (UC) \footnote{Detailed descriptions of the guidelines are in \cite{junior2010, fiori2012}}.
+
+%\textbf{UC.2} elements of use case models related to the include (dependency - $<<$include$>>$) or association from actors relationships suggest either mandatory or optional variants.
+
+%Moreover, the set of guidelines facilitates the analysis of the UML semantic elements, associating them to the variable elements of an SPL. This helps on the identification of new variabilities, and supports the development process by the product line engineer.
+
+%The complexity and amount of variabilities and similarities to be managed in a SPL, if kept by a concise approach, allows a quickly generation of consistent products, as demonstrated by the experimental study presented in this paper (Section \ref{sec:exp}).
+
+\subsection{Mobile Learning}
+
+%The education and knowledge seeking represent an increasingly a necessity for anyone who wants to be competitive and successful, regardless of their age, gender or ethnicity. This scenario, coupled with 
+
+The rapid growth of information and communication technologies has favored the emergence of new methods for teaching and learning, providing innovative ways to face the shortcomings of traditional education \cite{west12}. 
+
+M-learning has emerged in this context, being characterized by the ability to provide a strong interaction between learners and instructors, enabling them not only to access a virtual learning environment but also to contribute and actively participate of the knowledge construction process through mobile devices anytime and anywhere \cite{kukulska05}. Thus, the interaction with learning applications through mobile devices provides benefits that go beyond accessibility, convenience and communication.
+
+%(e.g., mobile phones, tablets, smartphones, laptops, tv, etc.)  
+
+%In this context, issues related to teaching and learning have been increasingly discussed and studied by the scientific community. In particular, computational learning environments are showing a increasing importance, performing a vital role in teaching and training activities, being relevant not only in the academic field but also in the industrial environment \cite{svetlana2009}.
+
+%If we consider the characteristics of the current society in a parallel with their latest technological evolutions, perhaps the most effective method of teaching is the mobile apredizado, or simply m-learning \cite{unesco2012}. In general, m-learning is characterized by the ability to provide a strong interaction between learners and instructors, enabling them to contribute, participate and access the learning environment through mobile devices (phones, tablets, smartphones, laptops, tv, etc.) anytime and anywhere \cite{kukulska2005}.
+
+Despite the benefits provided, m-learning is still considered an incipient concept, presenting limitations that difficults its effective development and adoption. For instance, even with the increasing demand for m-learning applications, there are few works addressing development issues through a strategy of systematic reuse, such as SPL, in the mobile learning setting.  
+
+Based on the concepts and ideas summarized in this section, we have worked on the establishment of M-SPLearning, an SPL to the m-learning domain. The main characteristics of M-SPLearning as well as its evaluation by conducting an experimental study are discussed next. 
+
+%Being a relatively new concept and that gained momentum with its current ubiquity, the m-learning represents an attractive line of research due to the lack of methodologies that potentialize him. In this sense, the many settings and tools existing in the applications of this area provide a favorable scenario for implementing a strategy of systematic reuse. Consequently, the authors explore this niche through M-SPLearning, which synthesizes an LPS applied to the field of m-learning applications \cite{seke2014, fie2014}.
