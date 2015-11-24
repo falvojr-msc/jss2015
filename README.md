@@ -1,2 +1,2 @@
-# Journal of Systems and Software (JSS) 2015
+# JSS 2015 Article
 
