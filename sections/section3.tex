@@ -1,7 +1,7 @@
 \section{M-SPLearning}\label{section3}
 
 %Com o objetivo de apresentar como o gerenciamento da variabilidades pode melhorar o desenvolvimento de aplicações de m-learning, os autores definiram uma LPS, denominada M-SPLearning. Buscando explorar as variabilidades desse domínio para acelerar o time to market e reduzir o numero de falhas nos produtos. Nesta seção, as atividades conduzidas para a concepção da M-SPLearning são detalhadas a fim de expor suas principais peculiaridades e referências.
-Aiming at presenting how the management of variabilities can improve the development of m-learning applications, we have established M-SPLearning \cite{falvojr14a, falvojr14b}. The idea was to investigate how the variabilities of this domain can accelerate time-to-market and reduce product faults. In this section, the activities conducted in design of the M-SPLearning are detailed \cite{oliveirajr10, filho13, krueger02, kang90}.
+Aiming at presenting how the management of variabilities can improve the development of m-learning applications, we have established M-SPLearning \cite{falvojr14a, falvojr14b}. The idea is to investigate how the variabilities of this domain can accelerate time-to-market and reduce product faults. In this section, the activities conducted in design of the M-SPLearning are detailed \cite{oliveirajr10, filho13, krueger02, kang90}.
 
 %A Seção \ref{section31} apresenta a Engenharia de Domínio realizada para concepção da \textit{M-SPLear\allowbreak ning} evidenciando sua capacidade produtiva através das seguintes atividades secundárias: (i) Análise de Domínio; (ii) Definição da Arquitetura; (iii) Projeto de Componentes; e (iv) Plano de Produção. Em seguida, na Seção \ref{section32}, a Engenharia de Aplicação apresenta os detalhes sobre a implementação e utilização da LPS especificada.
 %Section \ref{section31} presents the DE performed for the M-SPLearning design showing its productive capacity by means of the following sideline activities: (i) Domain Analysis; (ii) Definition of Architecture; (iii) Components Design; and (iv) Production Plan. In Section \ref{section32}, AE details the implementation and utilization of our SPL.
@@ -12,7 +12,7 @@ Aiming at presenting how the management of variabilities can improve the develop
 During the DE activity, similarities and variabilities must be specified for the development of the SPL in order to establish a systematic reusable platform. The result of this activity is a set of assets from which the SPL should be implemented, thus characterizing its product family \cite{bockle05, vanderlinden07}. In general, the activities that characterize the DE can be considered the most critical in the conception of an SPL, since delimiting a domain of study is not a trivial task.
 
 %Analisando o extenso domínio das aplicações móveis percebe-se que seus produtos podem ser implementadas usando diferentes plataformas de desenvolvimento, como por exemplo, Android, iOS ou Windows Phone. Com isto, o domínio de m-learning também inclui sistemas operacionais diferentes. Assim, para definir um domínio aceitável em termos de escopo, selecionamos um único sistema operacional. Nossa escolha pelo Android se baseou na quantidade de dispositivos que cada sistema operacional controla, visto que esse SO detém cerca de 80% do mercado de smartphones do mundo, equivalente a 793,6 milhões de dispositivos.
-The mobile applications can be implemented using different development platforms, including Android, iOS and Windows Phone. Furthermore, the m-learning domain also includes different operating systems. Thus, to define an acceptable domain in terms of scope, we selected a single operating system. Our choice for Android was based on the amount of devices that each operating system controls, since this OS owns around 80\% of the world's smartphones market, which is equivalent to 793.6 million devices. \cite{llamas14}.
+Mobile applications can be implemented using different development platforms, including Android, iOS and Windows Phone. Furthermore, the m-learning domain also includes different operating systems. Thus, to define an acceptable domain in terms of scope, we selected a single operating system. Our choice for Android was based on the amount of devices that each operating system controls, since this OS owns around 80\% of the world's smartphones market, which is equivalent to 793.6 million devices. \cite{llamas14}.
 
 %Com um domínio factível definido, um catálogo de requisitos para ambientes m-learning foi adaptado respeitando o modelo de qualidade ISO/IEC 25010, gerando, assim, um catálogo de requisitos estendido e, em seguida, o modelo de features para a M-SPLearning. Tal catálogo busca refletir, em alto nível, a experiência adquirida pelos desenvolvedores e pesquisadores nesta nova modalidade de aprendizagem. Além disso, o catálogo é genérico e abrangente, beneficiando sua adoção para fins diferentes do domínio de m-learning.
 With a feasible domain defined, a requirements catalog for m-learning applications was proposed based on a related work \cite{filho13} and ISO/IEC 25010 quality model. Such a catalog intends to reflect, in a high level basis, the experience gained from developers and researchers of m-learning. Furthermore, the catalog is generic and embracing, benefiting its adoption for different purposes in the m-learning domain. 
@@ -66,24 +66,26 @@ The checklist was composed of 12 multiple choice questions, where the first two 
 %To apply the online form several research groups were notified via email with an invitation for voluntary participation in the checklist. After a few days the form was completed with a total of eleven participants.
 
 %Os resultados coletados mostraram que, na visão dos participantes, o catálogo de requisitos está adequado ou regular a todos os itens avaliados. Além disso, nenhuma das questões relacionadas ao catálogo de requisitos da M-SPLearning foi respondida como insatisfatória. A Tabela \ref{tableMSPLChecklist} sintetiza as avaliações médias obtidas a partir dos 11 formulários de ckecklist submetidos.
-The questionnaire was answered by 11 participants and the results showed that the requirements catalog was ``Adequate" or ``Regular" in all evaluated items. Furthermore, none of the questions related to the requirements catalog of the M-SPLearning was answered as ``Unsatisfactory". Table \ref{tableMSPLChecklist} summarizes the average ratings obtained from submitted forms.
+The questionnaire was answered by 11 participants and the results showed that the requirements catalog was ``Adequate", with a mean of 60.90\%, and was ``Regular", with a mean of 39.10\%, in all evaluated items. Furthermore, none of the questions related to the requirements catalog of the M-SPLearning was answered as ``Unsatisfactory". 
 
-\begin{table}
-    \caption{M-SPLearning Requirements Catalog Checklist Summary.}
-    \centering
-    \scriptsize
-    \begin{tabular}{cc}
-        \toprule
-        \textbf{Option} & \textbf{Average Percentage Obtained} \\
-        \midrule
-        Adequate       & 60.90\% \\
-        Regular        & 39.10\% \\
-        Unsatisfactory & 0.00\% \\
-        \bottomrule
-    \end{tabular}
-    \label{tableMSPLChecklist}
-\end{table}
-
+%Table \ref{tableMSPLChecklist} summarizes the average ratings obtained from submitted forms.
+%
+%\begin{table}
+%    \caption{M-SPLearning Requirements Catalog Checklist Summary.}
+%    \centering
+%    \scriptsize
+%    \begin{tabular}{cc}
+%        \toprule
+%        \textbf{Option} & \textbf{Average Percentage Obtained} \\
+%        \midrule
+%        Adequate       & 60.90\% \\
+%        Regular        & 39.10\% \\
+%        Unsatisfactory & 0.00\% \\
+%        \bottomrule
+%    \end{tabular}
+%    \label{tableMSPLChecklist}
+%\end{table}
+%
 %A sumarização dos resultados foi considerada uma validação preliminar, visto que o preenchimento de um checklist anônimo não caracteriza uma técnica de validação formal. Desta forma, o checklist proposto consistiu em uma validação inicial que deve ser complementada com novas técnicas no futuro. Todavia, esta atividade de validação foi importante para avaliar o artefato que sintetizou os requisitos elicitados para a M-SPLearning.
 %The summary of the results was considered a preliminary validation, since the completion of an anonymous checklist does not characterize a formal validation technique. Therefore, the proposed checklist consisted of an initial validation that should be supplemented with new techniques in the future. However, this validation activity was important to evaluate the asset that summarized the elicited requirements for the M-SPLearning.
 Although preliminary, the informal validation performed was important to evaluate the set of requirements elicited for M-SPLearning.
@@ -232,14 +234,16 @@ In technical terms,  M-SPLearning presents the logical view of an SPL defined fo
 By definition, the AE instantiates the core assets of SPL to generate specific products. For this, the production plan was used to build the respective concrete modules. In the context of this activity, the \textit{GUI} module is inevitably the most exploited, because all products are generated therethrough.
 
 %A primeira interação entre usuário e a M-SPLearning ocorre em uma página inicial web. Nela, os usuários podem registrar-se e, posteriormente, autenticar-se na aplicação. Essa interface visual também introduz o domínio e os principais objetivos da M-SPLearning, contextualizando seus usuários. Outro aspecto relevante foi a construção de suas páginas web completamente baseadas no conceito de layouts responsivos, o que, dentre outras tendências, tornou a representação visual da LPS ainda mais dinâmica e flexível. A Figura \ref{figureMSPLWebLogin} expõe tais características.
-The first interaction between the user and M-SPLearning occurs in a web home page. Therein, users can sign up and then log into the application. This interface also introduces the domain and the main objectives of M-SPLearning. Another important aspect refers the construction of the web pages completely based on the concept of responsive layouts, which makes the visual representation of SPL even more dynamic and flexible. Figure \ref{figureMSPLWebLogin} presents such characteristics.
+The first interaction between the user and M-SPLearning occurs in a web home page. Therein, users can sign up and then log into the application. This interface also introduces the domain and the main objectives of M-SPLearning. Another important aspect refers the construction of the web pages completely based on the concept of responsive layouts, which makes the visual representation of SPL even more dynamic and flexible. 
 
-\begin{figure}
-\centering
-\includegraphics[scale=0.4]{figures/section3/MSPLWebLogin}
-\caption{M-SPLearning GUI Login.}
-\label{figureMSPLWebLogin}
-\end{figure}
+%Figure \ref{figureMSPLWebLogin} presents such characteristics.
+%
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.4]{figures/section3/MSPLWebLogin}
+%\caption{M-SPLearning GUI Login.}
+%\label{figureMSPLWebLogin}
+%\end{figure}
 
 %Com um usuário devidamente autenticado, a interface resultante é a caracterização mais evidente da M-SPLearning, já que possibilita o gerenciamento visual das variabilidades disponibilizadas pela LPS. Neste ponto, o usuário, por exemplo um professor, simplesmente realiza alguns cliques para geração de um produto específico, criando, assim, um APK com uma aplicação m-learning instalável em qualquer dispositivo Android.
 With an authenticated user, the resulting interface is the most evident characterization of M-SPLearning, as it enables the visual management of variabilities provided by SPL. At this point, the user, for example a teacher, simply performs a few clicks to generate a specific product, which creates an APK that encapsulates a custom m-learning application for any Android device. The page for performing this procedure is illustrated in Figure \ref{figureMSPLWebGeneration}, which also shows the visual interface for managing the products generated by M-SPLearning. Furthermore, it is important to note that the variabilities related to features prioritized during this implementation can be configured in the products generation.
@@ -309,4 +313,4 @@ The Figure \ref{figureMSPLStudentView} illustrates an example of a video feature
 \end{figure}
 
 %É importante observar que foi possível incluir os requisitos previamente definidos para a construção de uma LPS. A concepção da M-SPLearning envolveu desde a análise e projeto até a implementação funcional da proposta desta pesquisa. A avaliação formal da M-SPLearning, junto de sua abordagem e principais resultados, são descritos na Seção \ref{section4}.
-It is important to note that it was possible to include the requirements previously set for the construction of an SPL. The design of the M-SPLearning involved from analysis and design to functional implementation. A formal evaluation of the M-SPLearning, along with this approach and main results are described in Section \ref{section4}.
+It is important to note that it was possible to include the requirements previously set for the construction of an SPL. The design of the M-SPLearning involved from analysis and design to functional implementation. A formal evaluation of the M-SPLearning, along with this approach and main results is described in Section \ref{section4}.
